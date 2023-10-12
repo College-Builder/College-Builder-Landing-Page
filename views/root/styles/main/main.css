@@ -64,21 +64,11 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
   background-color: var(--purple);
   position: absolute;
   bottom: 0px;
-  left: 32px;
-}
-.style__header-line span.style__header-line__line::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  transform: translateY(-5px);
-  position: absolute;
-  top: 0px;
-  right: -60px;
+  left: 26px;
 }
 .style__header-line span.style__header-line__line::before {
   content: "";
-  width: 40px;
+  width: 220px;
   height: 4px;
   border: 2.4px solid var(--purple);
   border-right: 2.4px solid transparent;
@@ -99,7 +89,7 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
   background-color: var(--purple);
   position: absolute;
   top: 0px;
-  left: 32px;
+  left: 26px;
 }
 .style__section-line span.style__section-line__line::after {
   content: "";
@@ -119,12 +109,20 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
     display: block;
   }
 }
+@media (min-width: 1000px) {
+  .style__header-line span.style__header-line__line,
+  .style__header-line span.style__section-line__line,
+  .style__section-line span.style__header-line__line,
+  .style__section-line span.style__section-line__line {
+    left: 70px;
+  }
+}
 @media (min-width: 1700px) {
   .style__header-line span.style__header-line__line,
   .style__header-line span.style__section-line__line,
   .style__section-line span.style__header-line__line,
   .style__section-line span.style__section-line__line {
-    left: 168px;
+    left: 140px;
   }
 }
 /**/
@@ -134,10 +132,22 @@ div.style__section-padding {
   padding-left: 16px;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 700px) {
+  div.style__section-padding {
+    padding-right: 62px;
+    padding-left: 62px;
+  }
+}
+@media (min-width: 800px) {
   div.style__section-padding {
     padding-right: 84px;
     padding-left: 84px;
+  }
+}
+@media (min-width: 1000px) {
+  div.style__section-padding {
+    padding-right: 140px;
+    padding-left: 140px;
   }
 }
 @media (min-width: 1700px) {
@@ -149,14 +159,12 @@ div.style__section-padding {
 /**/
 /**/
 div.style__section-container {
-  margin-top: 84px;
-  margin-bottom: 84px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 div.style__section-container h2 {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 div.style__section-container div.style__section-container__section-content {
   padding-right: 40px;
@@ -164,21 +172,28 @@ div.style__section-container div.style__section-container__section-content {
 }
 
 @media (min-width: 1300px) {
+  div.style__section-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  div.style__section-container h2 {
+    margin-bottom: 60px;
+  }
   div.style__section-container div.style__section-container__section-content {
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 @media (min-width: 1700px) {
   div.style__section-container div.style__section-container__section-content {
-    padding-right: 152px;
-    padding-left: 152px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 @media (min-width: 1900px) {
   div.style__section-container div.style__section-container__section-content {
-    padding-right: 220x;
-    padding-left: 220px;
+    padding-right: 120x;
+    padding-left: 120px;
   }
 }
 main {
@@ -272,6 +287,64 @@ div.section-group div.style__section-container__section-content > div > a ul li 
 @media (min-width: 1300px) {
   div.section-group div.style__section-container__section-content > div {
     flex-direction: row;
+  }
+}
+/**/
+/**/
+div.section-college div.style__section-container__section-content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+div.section-college div.style__section-container__section-content > div > button {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+div.section-college div.style__section-container__section-content > div > button img {
+  width: 100%;
+  object-fit: cover;
+}
+div.section-college div.style__section-container__section-content > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+div.section-college div.style__section-container__section-content > div > div > a {
+  display: block;
+  margin: auto;
+  width: min-content;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  transition: ease-in-out 0.35s;
+  border-radius: 8px;
+  padding: 14px 32px;
+  white-space: nowrap;
+}
+div.section-college div.style__section-container__section-content > div > div > a:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  div.section-college div.style__section-container__section-content > div {
+    flex-direction: row;
+    gap: 40px;
+  }
+  div.section-college div.style__section-container__section-content > div > button, div.section-college div.style__section-container__section-content > div > div {
+    width: 50%;
+  }
+  div.section-college div.style__section-container__section-content > div > button img {
+    height: 100%;
+  }
+  div.section-college div.style__section-container__section-content > div > div {
+    padding: 24px 0px;
+    text-align: left;
+  }
+  div.section-college div.style__section-container__section-content > div > div a {
+    margin: 0px;
   }
 }
 

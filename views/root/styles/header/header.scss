@@ -14,10 +14,21 @@ header {
 			position: relative;
 
 			& > div:first-of-type {
+				&::before {
+					content: '';
+					width: 16px;
+					height: 100%;
+					background-color: white;
+					transform: translateX(-100%);
+					position: absolute;
+					top: 0px;
+				}
+
 				display: none;
 				align-items: center;
 				white-space: nowrap;
 				transform: translateY(-50%);
+				background-color: white;
 				position: absolute;
 				top: 50%;
 				left: 0px;
@@ -84,7 +95,7 @@ header {
 			& > ul {
 				display: flex;
 				flex-direction: column;
-				gap: 9.6px;
+				gap: 16px;
 				margin-top: 18.4px;
 			}
 		}

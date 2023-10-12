@@ -116,3 +116,83 @@ div.section-group {
 		}
 	}
 }
+
+/**/
+/**/
+
+div.section-college {
+	div.style__section-container__section-content {
+		& > div {
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+
+			& > button {
+				display: flex;
+				width: 100%;
+				border-radius: 8px;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					object-fit: cover;
+				}
+			}
+
+			& > div {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				text-align: center;
+
+				& > a {
+					&:hover {
+						background-color: var(--purple);
+						color: white;
+					}
+
+					display: block;
+					margin: auto;
+					width: min-content;
+					border: 2px solid var(--purple);
+					color: var(--purple);
+					transition: ease-in-out 0.35s;
+					border-radius: 8px;
+					padding: 14px 32px;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	div.section-college {
+		div.style__section-container__section-content {
+			& > div {
+				flex-direction: row;
+				gap: 40px;
+
+				& > button,
+				& > div {
+					width: 50%;
+				}
+
+				& > button {
+					img {
+						height: 100%;
+					}
+				}
+
+				& > div {
+					padding: 24px 0px;
+					text-align: left;
+
+					a {
+						margin: 0px;
+					}
+				}
+			}
+		}
+	}
+}
