@@ -1,10 +1,11 @@
 :root {
+	--light-purple: rgb(245, 240, 249);
 	--purple: #5b048e;
 }
 
 * {
 	&::-webkit-scrollbar {
-		width: 17.5px;
+		width: 14px;
 	}
 
 	&::-webkit-scrollbar-thumb {

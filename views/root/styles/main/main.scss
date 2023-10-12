@@ -1,0 +1,118 @@
+@import '../styles/styles';
+
+main {
+	margin-top: 100px;
+}
+
+/**/
+/**/
+
+div.section-group {
+	background-color: var(--light-purple);
+
+	div.style__section-container__section-content {
+		& > div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			gap: 32px;
+
+			& > a {
+				&::before {
+					z-index: -1;
+					content: '';
+					width: calc($section-line-width - 0.4px);
+					height: 100%;
+					background-color: gray;
+					filter: opacity(48%);
+					transform: translateX(-50%);
+					position: absolute;
+					top: 0px;
+					left: 50%;
+				}
+
+				&:hover {
+					& > div {
+						span {
+							filter: opacity(100%);
+
+							i {
+								transform: translateY(0%);
+							}
+						}
+					}
+				}
+
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 14px;
+				width: min-content;
+				text-align: center;
+				position: relative;
+
+				& > div {
+					border-radius: 100%;
+					overflow: hidden;
+					width: 100px;
+					height: 100px;
+					position: relative;
+
+					span {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 100%;
+						height: 100%;
+						filter: opacity(0%);
+						background-color: #0e76a8;
+						transition: ease-in-out 0.48s;
+						position: absolute;
+
+						i {
+							transform: translateY(100%);
+							transition: ease-in-out 0.64s;
+							font-size: 3em;
+							color: white;
+						}
+					}
+
+					img {
+						width: inherit;
+						height: inherit;
+						object-fit: cover;
+					}
+				}
+
+				p {
+					padding: 4px 0px;
+					color: black;
+					background-color: var(--light-purple);
+					white-space: nowrap;
+				}
+
+				ul {
+					padding: 4px 0px;
+					background-color: var(--light-purple);
+
+					li {
+						color: var(--purple);
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1300px) {
+	div.section-group {
+		div.style__section-container__section-content {
+			& > div {
+				flex-direction: row;
+			}
+		}
+	}
+}

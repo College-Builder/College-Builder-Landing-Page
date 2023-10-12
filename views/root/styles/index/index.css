@@ -1,4 +1,5 @@
 :root {
+  --light-purple: rgb(245, 240, 249);
   --purple: #5b048e;
 }
 
@@ -10,7 +11,7 @@
   font-family: "Poppins", sans-serif;
 }
 *::-webkit-scrollbar {
-  width: 17.5px;
+  width: 14px;
 }
 *::-webkit-scrollbar-thumb {
   background-color: #888;
