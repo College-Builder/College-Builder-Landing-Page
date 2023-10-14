@@ -31,6 +31,7 @@
 	const images = button.querySelectorAll('img');
 	let imageIndex = 0;
 	let goRight = true;
+	let wait = false;
 	let interval = setInterval(() => handleScroll(), 8000);
 
 	button.addEventListener('click', () => handleScroll());
@@ -46,6 +47,16 @@
 	});
 
 	function handleScroll() {
+		if (wait) {
+			return;
+		}
+
+		wait = true;
+
+		setTimeout(() => {
+			wait = false;
+		}, 600);
+
 		clearInterval(interval);
 		interval = setInterval(() => handleScroll(), 8000);
 

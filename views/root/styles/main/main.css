@@ -64,7 +64,7 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
   background-color: var(--purple);
   position: absolute;
   bottom: 0px;
-  left: 26px;
+  left: 22px;
 }
 .style__header-line span.style__header-line__line::before {
   content: "";
@@ -89,7 +89,7 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
   background-color: var(--purple);
   position: absolute;
   top: 0px;
-  left: 26px;
+  left: 22px;
 }
 .style__section-line span.style__section-line__line::after {
   content: "";
@@ -109,6 +109,22 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
     display: block;
   }
 }
+@media (min-width: 700px) {
+  .style__header-line span.style__header-line__line,
+  .style__header-line span.style__section-line__line,
+  .style__section-line span.style__header-line__line,
+  .style__section-line span.style__section-line__line {
+    left: 31px;
+  }
+}
+@media (min-width: 800px) {
+  .style__header-line span.style__header-line__line,
+  .style__header-line span.style__section-line__line,
+  .style__section-line span.style__header-line__line,
+  .style__section-line span.style__section-line__line {
+    left: 42px;
+  }
+}
 @media (min-width: 1000px) {
   .style__header-line span.style__header-line__line,
   .style__header-line span.style__section-line__line,
@@ -122,14 +138,14 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
   .style__header-line span.style__section-line__line,
   .style__section-line span.style__header-line__line,
   .style__section-line span.style__section-line__line {
-    left: 140px;
+    left: 110px;
   }
 }
 /**/
 /**/
 div.style__section-padding {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 @media (min-width: 700px) {
@@ -159,19 +175,19 @@ div.style__section-padding {
 /**/
 /**/
 div.style__section-container {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 div.style__section-container h2 {
   text-align: center;
   margin-bottom: 40px;
 }
 div.style__section-container div.style__section-container__section-content {
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   div.style__section-container {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -180,19 +196,13 @@ div.style__section-container div.style__section-container__section-content {
     margin-bottom: 60px;
   }
   div.style__section-container div.style__section-container__section-content {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
 @media (min-width: 1700px) {
   div.style__section-container div.style__section-container__section-content {
-    padding-right: 40px;
-    padding-left: 40px;
-  }
-}
-@media (min-width: 1900px) {
-  div.style__section-container div.style__section-container__section-content {
-    padding-right: 120x;
+    padding-right: 120px;
     padding-left: 120px;
   }
 }

@@ -1,0 +1,78 @@
+footer {
+  padding: 60px 0px;
+  background-color: var(--light-purple);
+}
+footer > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+footer > div:first-of-type > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+footer > div:first-of-type > a:first-of-type {
+  margin-bottom: 28px;
+}
+footer > div:first-of-type > a:last-of-type {
+  display: none;
+}
+footer > div:first-of-type > a img {
+  width: 80px;
+}
+footer > div:first-of-type > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer > div:first-of-type > div:nth-of-type(3), footer > div:first-of-type > div:nth-of-type(4) {
+  display: none;
+}
+footer > div:first-of-type > div > span {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  color: gray;
+}
+footer > div:first-of-type > div > ul {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+footer > div:first-of-type > div > ul li a {
+  color: var(--purple);
+}
+footer > div:last-of-type {
+  margin-top: 80px;
+}
+footer > div:last-of-type p {
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+}
+
+@media (min-width: 1300px) {
+  footer > div:first-of-type {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer > div:first-of-type > a:first-of-type {
+    margin-bottom: 0px;
+  }
+  footer > div:first-of-type > a:last-of-type {
+    display: flex;
+  }
+  footer > div:first-of-type > div:nth-of-type(2) {
+    display: none;
+  }
+  footer > div:first-of-type > div:nth-of-type(3), footer > div:first-of-type > div:nth-of-type(4) {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
