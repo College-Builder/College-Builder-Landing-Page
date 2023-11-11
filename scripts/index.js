@@ -8,16 +8,55 @@
 
 	let state = false;
 
-	button.addEventListener('click', () => handleClick());
-	buttonOff.addEventListener('click', () => handleClick());
+	button.addEventListener('click', () => handleDrawerAction());
+	buttonOff.addEventListener('click', () => handleDrawerAction());
 
-	menu.querySelectorAll('a').forEach((a) => {
-		a.addEventListener('click', () => {
-			handleClick();
+	window.document.querySelector('he');
+	window.document.querySelectorAll('a[content-link]').forEach((a) => {
+		a.addEventListener('click', (e) => {
+			e.preventDefault();
+			handleClickScroll(a.getAttribute('href'));
 		});
 	});
 
-	function handleClick() {
+	menu.querySelectorAll('a').forEach((a) => {
+		a.addEventListener('click', () => {
+			handleDrawerAction();
+		});
+	});
+
+	function handleClickScroll(objectRef) {
+		const object = window.document.querySelector(
+			`[id='${objectRef.replace('#', '')}']`,
+		);
+
+		if (!object) {
+			return;
+		}
+
+		const rect = object.getBoundingClientRect();
+		const yCoordinate = rect.top + window.scrollY;
+		const screenHeight = window.innerHeight;
+
+		if (rect.height < screenHeight && window.innerWidth > 1300) {
+			// If object height is less than screen height, scroll to center of the screen
+			const centerYCoordinate = yCoordinate - (screenHeight - rect.height) / 2;
+			window.scrollTo({
+				behavior: 'smooth',
+				top: centerYCoordinate,
+				left: 0,
+			});
+		} else {
+			// If object height is greater than screen height, scroll to the beginning of the object
+			window.scrollTo({
+				behavior: 'smooth',
+				top: yCoordinate - 50,
+				left: 0,
+			});
+		}
+	}
+
+	function handleDrawerAction() {
 		if (state) {
 			menu.style.height = '0px';
 			buttonOff.classList.remove('--on');
@@ -42,6 +81,11 @@
 	);
 
 	nextButtons[0].classList.add('--off');
+
+	if (numberOfProjects === 1) {
+		nextButtons[1].classList.add('--off');
+		return;
+	}
 
 	let index = 0;
 
