@@ -11,6 +11,12 @@
 	button.addEventListener('click', () => handleClick());
 	buttonOff.addEventListener('click', () => handleClick());
 
+	menu.querySelectorAll('a').forEach((a) => {
+		a.addEventListener('click', () => {
+			handleClick();
+		});
+	});
+
 	function handleClick() {
 		if (state) {
 			menu.style.height = '0px';
