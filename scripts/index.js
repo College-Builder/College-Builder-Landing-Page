@@ -11,17 +11,32 @@
 	button.addEventListener('click', () => handleDrawerAction());
 	buttonOff.addEventListener('click', () => handleDrawerAction());
 
-	window.document.querySelector('he');
+	menu.querySelectorAll('a').forEach((a) => {
+		a.addEventListener('click', () => {
+			handleDrawerAction();
+		});
+	});
+
+	function handleDrawerAction() {
+		if (state) {
+			menu.style.height = '0px';
+			buttonOff.classList.remove('--on');
+			button.classList.remove('--on');
+		} else {
+			menu.style.height = menuHeight;
+			buttonOff.classList.add('--on');
+			button.classList.add('--on');
+		}
+
+		state = !state;
+	}
+})();
+
+(() => {
 	window.document.querySelectorAll('a[content-link]').forEach((a) => {
 		a.addEventListener('click', (e) => {
 			e.preventDefault();
 			handleClickScroll(a.getAttribute('href'));
-		});
-	});
-
-	menu.querySelectorAll('a').forEach((a) => {
-		a.addEventListener('click', () => {
-			handleDrawerAction();
 		});
 	});
 
@@ -54,20 +69,6 @@
 				left: 0,
 			});
 		}
-	}
-
-	function handleDrawerAction() {
-		if (state) {
-			menu.style.height = '0px';
-			buttonOff.classList.remove('--on');
-			button.classList.remove('--on');
-		} else {
-			menu.style.height = menuHeight;
-			buttonOff.classList.add('--on');
-			button.classList.add('--on');
-		}
-
-		state = !state;
 	}
 })();
 
