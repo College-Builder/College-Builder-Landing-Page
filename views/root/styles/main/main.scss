@@ -188,6 +188,7 @@ div.section-group {
 	div.section-group {
 		div.style__section-container__section-content {
 			& > div {
+				align-items: start;
 				flex-direction: row;
 
 				& > a {

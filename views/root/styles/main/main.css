@@ -362,6 +362,7 @@ div.section-group div.style__section-container__section-content > div > a ul li 
 
 @media (min-width: 1300px) {
   div.section-group div.style__section-container__section-content > div {
+    align-items: start;
     flex-direction: row;
   }
   div.section-group div.style__section-container__section-content > div > a {
