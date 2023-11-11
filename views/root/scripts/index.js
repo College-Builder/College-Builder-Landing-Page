@@ -27,6 +27,123 @@
 })();
 
 (() => {
+	const projectsContainer = window.document.querySelector(
+		'div[projects-container]',
+	);
+	const numberOfProjects = projectsContainer.querySelectorAll('a').length;
+	const nextButtons = window.document.querySelectorAll(
+		'button[section-projects__next-button]',
+	);
+
+	nextButtons[0].classList.add('--off');
+
+	let index = 0;
+
+	let left = false;
+	let time = 6000;
+
+	let run = true;
+	let runSet = false;
+	let runAgain;
+
+	nextButtons.forEach((button, index) => {
+		button.addEventListener('click', () => {
+			run = false;
+
+			if (runAgain) {
+				runSet = false;
+				clearTimeout(runAgain);
+			}
+
+			if (index === 0) {
+				moveLeft();
+			} else {
+				moveRight();
+			}
+		});
+	});
+
+	setInterval(() => {
+		if (!run) {
+			if (!runSet) {
+				runSet = true;
+
+				runAgain = setTimeout(() => {
+					run = true;
+					runSet = false;
+				}, time * 5);
+			}
+
+			return;
+		}
+
+		if (left) {
+			moveLeft();
+		} else {
+			moveRight();
+		}
+
+		if (index === numberOfProjects - 1) {
+			left = true;
+		}
+
+		if (index === 0) {
+			left = false;
+		}
+	}, time);
+
+	window.addEventListener('resize', () => {
+		nextButtons[0].classList.add('--off');
+		nextButtons[1].classList.remove('--off');
+
+		projectsContainer.scrollTo({
+			behavior: 'smooth',
+			left: 0,
+		});
+	});
+
+	function moveLeft() {
+		const projectsContainerWidth =
+			window.getComputedStyle(projectsContainer).width;
+
+		index--;
+
+		if (index === 0) {
+			nextButtons[0].classList.add('--off');
+		}
+
+		nextButtons[1].classList.remove('--off');
+
+		projectsContainer.scrollTo({
+			behavior: 'smooth',
+			left:
+				projectsContainer.scrollLeft -
+				Number(projectsContainerWidth.replace('px', '')),
+		});
+	}
+
+	function moveRight() {
+		const projectsContainerWidth =
+			window.getComputedStyle(projectsContainer).width;
+
+		index++;
+
+		if (index === numberOfProjects - 1) {
+			nextButtons[1].classList.add('--off');
+		}
+
+		nextButtons[0].classList.remove('--off');
+
+		projectsContainer.scrollTo({
+			behavior: 'smooth',
+			left:
+				projectsContainer.scrollLeft +
+				Number(projectsContainerWidth.replace('px', '')),
+		});
+	}
+})();
+
+(() => {
 	const button = window.document.querySelector('button[image-carousel-button]');
 	const images = button.querySelectorAll('img');
 	let imageIndex = 0;

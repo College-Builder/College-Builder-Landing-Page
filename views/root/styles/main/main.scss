@@ -7,6 +7,83 @@ main {
 /**/
 /**/
 
+div.section-introduction {
+	div.style__section-container__section-content {
+		& > div {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			gap: 34px;
+			text-align: center;
+
+			p {
+				max-width: 680px;
+			}
+
+			a {
+				font-size: 38px;
+				color: black;
+			}
+		}
+	}
+}
+
+/**/
+/**/
+
+div.section-projects {
+	div.style__section-container__section-content {
+		& > div {
+			position: relative;
+
+			button {
+				&.--off {
+					filter: opacity(0%);
+					pointer-events: none;
+				}
+
+				width: 48px;
+				height: 48px;
+				font-size: 18px;
+				background-color: var(--purple);
+				color: white;
+				border-radius: 100%;
+				border: 4px solid white;
+				transition: ease-in-out 0.35s;
+				position: absolute;
+				top: 50%;
+			}
+
+			& > button:first-of-type {
+				transform: translate(-80%, -50%);
+				left: 0px;
+			}
+
+			& > button:last-of-type {
+				transform: translate(80%, -50%);
+				right: 0px;
+			}
+
+			& > div {
+				display: flex;
+				overflow: hidden;
+
+				& > a {
+					width: 100%;
+					min-width: 100%;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+/**/
+/**/
+
 div.section-group {
 	background-color: var(--light-purple);
 
@@ -112,6 +189,10 @@ div.section-group {
 		div.style__section-container__section-content {
 			& > div {
 				flex-direction: row;
+
+				& > a {
+					width: 100%;
+				}
 			}
 		}
 	}

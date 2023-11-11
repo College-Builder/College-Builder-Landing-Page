@@ -4,14 +4,14 @@ button.style__menu-button {
   transition: ease-in-out 0.35s;
 }
 button.style__menu-button.--on > div > div > div:nth-of-type(1) {
-  transform: translate(-50%, -50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
   top: 50%;
 }
 button.style__menu-button.--on > div > div > div:nth-of-type(2) {
   filter: opacity(0%);
 }
 button.style__menu-button.--on > div > div > div:nth-of-type(3) {
-  transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
   top: 50%;
 }
 button.style__menu-button > div {
@@ -23,16 +23,18 @@ button.style__menu-button > div > div {
   flex-direction: column;
   width: inherit;
   height: inherit;
+  transform: translate(8%);
   position: absolute;
+  right: 0px;
 }
 button.style__menu-button > div > div > div {
   content: "";
   width: 88%;
   height: 2.4px;
-  border-radius: 1000px;
+  border-radius: 80px;
   background-color: var(--purple);
   transition: ease-in-out 0.22s;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
   position: absolute;
 }
 button.style__menu-button > div > div > div:nth-of-type(1) {
@@ -89,7 +91,7 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
   background-color: var(--purple);
   position: absolute;
   top: 0px;
-  left: 22px;
+  left: 16px;
 }
 .style__section-line span.style__section-line__line::after {
   content: "";
@@ -104,11 +106,6 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
   left: 50%;
 }
 
-@media (min-width: 1300px) {
-  .style__header-line span.style__header-line__line {
-    display: block;
-  }
-}
 @media (min-width: 700px) {
   .style__header-line span.style__header-line__line,
   .style__header-line span.style__section-line__line,
@@ -133,6 +130,11 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
     left: 70px;
   }
 }
+@media (min-width: 1300px) {
+  .style__header-line span.style__header-line__line {
+    display: block;
+  }
+}
 @media (min-width: 1700px) {
   .style__header-line span.style__header-line__line,
   .style__header-line span.style__section-line__line,
@@ -144,8 +146,8 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
 /**/
 /**/
 div.style__section-padding {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
 @media (min-width: 700px) {
@@ -175,14 +177,20 @@ div.style__section-padding {
 /**/
 /**/
 div.style__section-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   padding-top: 96px;
   padding-bottom: 96px;
 }
+div.style__section-container h1,
 div.style__section-container h2 {
   text-align: center;
   margin-bottom: 40px;
+  max-width: 680px;
 }
 div.style__section-container div.style__section-container__section-content {
+  width: 100%;
   padding-right: 32px;
   padding-left: 32px;
 }
@@ -257,7 +265,7 @@ header > div > div > button {
   transform: translateY(-50%);
   position: absolute;
   top: 50%;
-  right: 0px;
+  right: 0;
 }
 header > div > div > div:last-of-type {
   display: none;
