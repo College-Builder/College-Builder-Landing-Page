@@ -70,12 +70,6 @@ header {
 				right: 0px;
 
 				& > a {
-					border-radius: 8px;
-					padding: 14px 24px;
-					white-space: nowrap;
-				}
-
-				& > a:last-of-type {
 					&:hover {
 						background-color: var(--purple);
 						color: white;
@@ -83,6 +77,9 @@ header {
 
 					border: 2px solid var(--purple);
 					transition: ease-in-out 0.35s;
+					border-radius: 8px;
+					padding: 14px 24px;
+					white-space: nowrap;
 				}
 			}
 		}

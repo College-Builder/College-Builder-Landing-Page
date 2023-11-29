@@ -276,15 +276,13 @@ header > div > div > div:last-of-type {
   right: 0px;
 }
 header > div > div > div:last-of-type > a {
+  border: 2px solid var(--purple);
+  transition: ease-in-out 0.35s;
   border-radius: 8px;
   padding: 14px 24px;
   white-space: nowrap;
 }
-header > div > div > div:last-of-type > a:last-of-type {
-  border: 2px solid var(--purple);
-  transition: ease-in-out 0.35s;
-}
-header > div > div > div:last-of-type > a:last-of-type:hover {
+header > div > div > div:last-of-type > a:hover {
   background-color: var(--purple);
   color: white;
 }
