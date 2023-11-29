@@ -120,7 +120,7 @@ div.logo-container {
 	}
 }
 
-button[menu-button--off] {
+button[menu-button-off] {
 	&.--on {
 		filter: opacity(40%);
 		pointer-events: all;

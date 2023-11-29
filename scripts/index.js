@@ -1,6 +1,6 @@
 (() => {
 	const button = window.document.querySelector('button[menu-button]');
-	const buttonOff = window.document.querySelector('button[menu-button--off]');
+	const buttonOff = window.document.querySelector('button[menu-button-off]');
 	const menu = window.document.querySelector('div[menu-container]');
 	const menuHeight = window.getComputedStyle(menu).height;
 

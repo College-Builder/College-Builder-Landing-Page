@@ -29,7 +29,7 @@ button.style__menu-button > div > div {
 }
 button.style__menu-button > div > div > div {
   content: "";
-  width: 88%;
+  width: 100%;
   height: 2.4px;
   border-radius: 80px;
   background-color: var(--purple);
@@ -146,8 +146,8 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
 /**/
 /**/
 div.style__section-padding {
-  padding-right: 48px;
-  padding-left: 48px;
+  padding-right: 38px;
+  padding-left: 38px;
 }
 
 @media (min-width: 700px) {
@@ -316,7 +316,7 @@ div.logo-container > a img {
   object-fit: contain;
 }
 
-button[menu-button--off] {
+button[menu-button-off] {
   z-index: 3;
   width: 100%;
   height: 100vh;
@@ -326,7 +326,7 @@ button[menu-button--off] {
   transition: ease-in-out 0.35s;
   position: fixed;
 }
-button[menu-button--off].--on {
+button[menu-button-off].--on {
   filter: opacity(40%);
   pointer-events: all;
 }
