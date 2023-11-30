@@ -31,8 +31,6 @@ A plataforma foi desenvolvida usando as seguintes ferramentas e tecnologias:
 - HTML (Hypertext Markup Language): Continua sendo a linguagem de marcação fundamental para estruturar o conteúdo da página web.
 - CSS (Cascading Style Sheets): Mantém seu papel essencial na definição da aparência e estilo da página web.
 - JavaScript: Ainda é utilizado para adicionar interatividade e funcionalidades dinâmicas à página web.
-- TypeScript: Foi integrado ao projeto para trazer tipagem estática ao JavaScript, o que proporciona um código mais robusto e com menos erros potenciais durante o desenvolvimento.
-- Node.js: Agora faz parte da arquitetura, permitindo a execução de código JavaScript no lado do servidor, proporcionando escalabilidade e eficiência no processamento de requisições.
 
 ## Arquitetura Cloud
 
