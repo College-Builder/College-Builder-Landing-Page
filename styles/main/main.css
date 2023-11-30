@@ -233,7 +233,7 @@ main {
 /**/
 /**/
 div.section-introduction {
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 div.section-introduction div.style__section-container__section-content > div {
   display: flex;
@@ -250,6 +250,11 @@ div.section-introduction div.style__section-container__section-content > div a {
   color: black;
 }
 
+@media (min-width: 1000px) {
+  div.section-introduction {
+    padding-bottom: 60px;
+  }
+}
 /**/
 /**/
 div.section-projects div.style__section-container__section-content > div {
