@@ -8,17 +8,12 @@ div.section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 260px;
 }
 div.section > div {
   max-width: 920px;
 }
 
-@media (min-width: 1300px) {
-  div.section {
-    padding-bottom: 180px;
-  }
-}
 /**/
 /**/
 div.section-logo {
@@ -47,23 +42,24 @@ div.section-show-case {
   display: flex;
   align-items: start;
   flex-direction: column;
+  width: 100%;
   gap: 42px;
 }
-div.section-show-case div {
+div.section-show-case > div {
   display: flex;
   align-items: start;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   max-width: 800px;
 }
-div.section-show-case div h2 {
+div.section-show-case > div h2 {
   font-size: 32px;
 }
-div.section-show-case div p {
+div.section-show-case > div p {
   color: var(--gray);
   font-size: 18px;
 }
-div.section-show-case div a {
+div.section-show-case > div a {
   font-size: 18px;
 }
 div.section-show-case a img {
@@ -75,6 +71,22 @@ div.section-show-case a img {
     font-size: 44px;
   }
 }
+/**/
+/**/
+div.technologies-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0px;
+}
+div.technologies-container img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+}
+
 /**/
 /**/
 div.section-sqr-stats {
@@ -109,6 +121,28 @@ div.section-sqr-stats > div > div:nth-of-type(2) i {
   }
   div.section-sqr-stats > div > div:nth-of-type(2) i {
     font-size: 120px;
+  }
+}
+/**/
+/**/
+div.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 51%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+div.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 990px) {
+  div.video-container {
+    padding-top: 400px;
   }
 }
 
