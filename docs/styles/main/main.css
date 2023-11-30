@@ -50,10 +50,10 @@ div.section-show-case > div {
   align-items: start;
   flex-direction: column;
   gap: 14px;
-  max-width: 800px;
 }
 div.section-show-case > div h2 {
   font-size: 32px;
+  max-width: 800px;
 }
 div.section-show-case > div p {
   color: var(--gray);
@@ -142,7 +142,7 @@ div.video-container iframe {
 
 @media (min-width: 990px) {
   div.video-container {
-    padding-top: 400px;
+    padding-top: 480px;
   }
 }
 
