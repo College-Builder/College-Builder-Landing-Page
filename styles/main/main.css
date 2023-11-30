@@ -400,6 +400,8 @@ div.section-college div.style__section-container__section-content > div > button
 }
 div.section-college div.style__section-container__section-content > div > div {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
   text-align: center;
@@ -419,9 +421,7 @@ div.section-college div.style__section-container__section-content > div > div {
   div.section-college div.style__section-container__section-content > div > div {
     padding: 24px 0px;
     text-align: left;
-  }
-  div.section-college div.style__section-container__section-content > div > div a {
-    margin: 0px;
+    align-items: start;
   }
 }
 
