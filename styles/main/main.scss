@@ -226,23 +226,6 @@ div.section-college {
 				flex-direction: column;
 				gap: 20px;
 				text-align: center;
-
-				& > a {
-					&:hover {
-						background-color: var(--purple);
-						color: white;
-					}
-
-					display: block;
-					margin: auto;
-					width: min-content;
-					border: 2px solid var(--purple);
-					color: var(--purple);
-					transition: ease-in-out 0.35s;
-					border-radius: 8px;
-					padding: 14px 32px;
-					white-space: nowrap;
-				}
 			}
 		}
 	}

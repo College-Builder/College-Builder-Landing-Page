@@ -55,6 +55,20 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
 }
 /**/
 /**/
+a.style__default-button {
+  border: 2px solid var(--purple);
+  transition: ease-in-out 0.35s;
+  border-radius: 8px;
+  padding: 14px 24px;
+  white-space: nowrap;
+}
+a.style__default-button:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+/**/
+/**/
 .style__header-line {
   overflow: hidden;
   position: fixed;
@@ -387,21 +401,6 @@ div.section-college div.style__section-container__section-content > div > div {
   flex-direction: column;
   gap: 20px;
   text-align: center;
-}
-div.section-college div.style__section-container__section-content > div > div > a {
-  display: block;
-  margin: auto;
-  width: min-content;
-  border: 2px solid var(--purple);
-  color: var(--purple);
-  transition: ease-in-out 0.35s;
-  border-radius: 8px;
-  padding: 14px 32px;
-  white-space: nowrap;
-}
-div.section-college div.style__section-container__section-content > div > div > a:hover {
-  background-color: var(--purple);
-  color: white;
 }
 
 @media (min-width: 1200px) {

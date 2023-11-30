@@ -55,6 +55,20 @@ button.style__menu-button > div > div > div:nth-of-type(3) {
 }
 /**/
 /**/
+a.style__default-button {
+  border: 2px solid var(--purple);
+  transition: ease-in-out 0.35s;
+  border-radius: 8px;
+  padding: 14px 24px;
+  white-space: nowrap;
+}
+a.style__default-button:hover {
+  background-color: var(--purple);
+  color: white;
+}
+
+/**/
+/**/
 .style__header-line {
   overflow: hidden;
   position: fixed;
@@ -270,17 +284,6 @@ header > div > div > div:last-of-type {
   position: absolute;
   top: 50%;
   right: 0px;
-}
-header > div > div > div:last-of-type > a {
-  border: 2px solid var(--purple);
-  transition: ease-in-out 0.35s;
-  border-radius: 8px;
-  padding: 14px 24px;
-  white-space: nowrap;
-}
-header > div > div > div:last-of-type > a:hover {
-  background-color: var(--purple);
-  color: white;
 }
 header > div > div:last-of-type {
   text-align: center;
