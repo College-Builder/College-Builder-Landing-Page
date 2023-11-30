@@ -33,55 +33,6 @@
 })();
 
 (() => {
-  var fullURL = window.location.href;
-
-  if (fullURL.includes("#")) {
-    var fragment = fullURL.split("#")[1];
-    setTimeout(() => {
-      handlePageScroll(`#${fragment}`);
-    }, 300);
-  }
-
-  window.document.querySelectorAll("a[content-link]").forEach((a) => {
-    a.addEventListener("click", (e) => {
-      e.preventDefault();
-      handlePageScroll(a.getAttribute("href"));
-    });
-  });
-
-  function handlePageScroll(objectRef) {
-    const object = window.document.querySelector(
-      `[id='${objectRef.replace("#", "")}']`
-    );
-
-    if (!object) {
-      return;
-    }
-
-    const rect = object.getBoundingClientRect();
-    const yCoordinate = rect.top + window.scrollY;
-    const screenHeight = window.innerHeight;
-
-    if (rect.height < screenHeight && window.innerWidth > 1300) {
-      // If object height is less than screen height, scroll to center of the screen
-      const centerYCoordinate = yCoordinate - (screenHeight - rect.height) / 2;
-      window.scrollTo({
-        behavior: "smooth",
-        top: centerYCoordinate,
-        left: 0,
-      });
-    } else {
-      // If object height is greater than screen height, scroll to the beginning of the object
-      window.scrollTo({
-        behavior: "smooth",
-        top: yCoordinate - 50,
-        left: 0,
-      });
-    }
-  }
-})();
-
-(() => {
   const projectsContainer = window.document.querySelector(
     "div[projects-container]"
   );

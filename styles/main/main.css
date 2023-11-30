@@ -180,8 +180,8 @@ div.style__section-container {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 180px;
+  padding-bottom: 180px;
 }
 div.style__section-container h1,
 div.style__section-container h2 {
@@ -196,10 +196,6 @@ div.style__section-container div.style__section-container__section-content {
 }
 
 @media (min-width: 1000px) {
-  div.style__section-container {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
   div.style__section-container h2 {
     margin-bottom: 60px;
   }

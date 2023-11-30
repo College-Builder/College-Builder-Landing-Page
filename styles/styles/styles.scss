@@ -220,8 +220,8 @@ div.style__section-container {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 96px;
-	padding-bottom: 96px;
+	padding-top: 180px;
+	padding-bottom: 180px;
 
 	h1,
 	h2 {
@@ -239,9 +239,6 @@ div.style__section-container {
 
 @media (min-width: 1000px) {
 	div.style__section-container {
-		padding-top: 120px;
-		padding-bottom: 120px;
-
 		h2 {
 			margin-bottom: 60px;
 		}
