@@ -4,10 +4,6 @@
   </a>
 </div>
 
-<h1 align="center">
-  College Builder Easy Virtual
-</h1>
-
 <p align="center">
 O College Builder Easy Virtual foi uma plataforma desenvolvida para hospedar projetos de alunos da Universidade de Sorocaba.
 </p>
