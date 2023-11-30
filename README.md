@@ -26,6 +26,7 @@ A plataforma foi desenvolvida usando as seguintes ferramentas e tecnologias:
 
 - HTML (Hypertext Markup Language): Continua sendo a linguagem de marcação fundamental para estruturar o conteúdo da página web.
 - CSS (Cascading Style Sheets): Mantém seu papel essencial na definição da aparência e estilo da página web.
+- Saas: Contribuiu para uma gestão mais eficiente e modular do código CSS.
 - JavaScript: Ainda é utilizado para adicionar interatividade e funcionalidades dinâmicas à página web.
 
 ## Arquitetura Cloud
