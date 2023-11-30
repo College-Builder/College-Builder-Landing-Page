@@ -232,6 +232,9 @@ main {
 
 /**/
 /**/
+div.section-introduction {
+  padding-bottom: 60px;
+}
 div.section-introduction div.style__section-container__section-content > div {
   display: flex;
   align-items: center;
