@@ -18,6 +18,10 @@ O College Builder Easy Virtual foi uma plataforma desenvolvida para hospedar pro
 
 ## Projeto 
 
+<a href="https://collegebuilder.easyvirtual.net/trail-life/s/system/administracao/login/">
+  <img src="https://github.com/College-Builder/College-Builder/blob/main/global-assets/Trail-Life-System-App/screenshot.1.png"/>
+</a>
+
 A College Builder é uma plataforma desenvolvida para centralizar e hospedar projetos acadêmicos universitários. Ela proporciona um espaço unificado para armazenar, gerenciar e apresentar os trabalhos realizados durante os semestres. A plataforma simplifica a colaboração e o acesso aos projetos, criando uma conexão direta com o GitHub, onde todos os repositórios dos projetos estão alojados. Dessa forma, a College Builder facilita a organização e visibilidade dos trabalhos acadêmicos, promovendo uma experiência mais eficiente e colaborativa para estudantes e membros da comunidade acadêmica.
 
 ## Ferramentas 
