@@ -3,10 +3,10 @@
   const buttonOff = window.document.querySelector("button[menu-button-off]");
   const menu = window.document.querySelector("div[menu-container]");
   let menuHeight = window.getComputedStyle(menu).height;
-  const expectedMenuHeight = 120
+  const expectedMenuHeight = 120;
 
-  if (Number(menuHeight.replace(/[^0-9.]/g, '')) < expectedMenuHeight) {
-    menuHeight = `${expectedMenuHeight}px`
+  if (Number(menuHeight.replace(/[^0-9.]/g, "")) < expectedMenuHeight) {
+    menuHeight = `${expectedMenuHeight}px`;
   }
 
   menu.style.height = "0px";
