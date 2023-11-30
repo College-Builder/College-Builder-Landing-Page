@@ -1,12 +1,8 @@
 <div align="center">
   <a href="https://collegebuilder.easyvirtual.net/">
-    <img src='https://github.com/College-Builder/College-Builder-Landing-Page/blob/main/assets/images/brand/logo.png' height='140'>
+    <img src='https://github.com/College-Builder/College-Builder/blob/main/global-assets/College-Builder-Landing-Page/logo.png' height='140'>
   </a>
 </div>
-
-<h1 align="center">
-  College Builder Easy Virtual
-</h1>
 
 <p align="center">
 O College Builder Easy Virtual foi uma plataforma desenvolvida para hospedar projetos de alunos da Universidade de Sorocaba.
@@ -18,6 +14,10 @@ O College Builder Easy Virtual foi uma plataforma desenvolvida para hospedar pro
 
 ## Projeto 
 
+<a href="https://collegebuilder.easyvirtual.net/">
+  <img src="https://github.com/College-Builder/College-Builder/blob/main/global-assets/College-Builder-Landing-Page/screenshot.png"/>
+</a>
+
 A College Builder é uma plataforma desenvolvida para centralizar e hospedar projetos acadêmicos universitários. Ela proporciona um espaço unificado para armazenar, gerenciar e apresentar os trabalhos realizados durante os semestres. A plataforma simplifica a colaboração e o acesso aos projetos, criando uma conexão direta com o GitHub, onde todos os repositórios dos projetos estão alojados. Dessa forma, a College Builder facilita a organização e visibilidade dos trabalhos acadêmicos, promovendo uma experiência mais eficiente e colaborativa para estudantes e membros da comunidade acadêmica.
 
 ## Ferramentas 
@@ -26,9 +26,8 @@ A plataforma foi desenvolvida usando as seguintes ferramentas e tecnologias:
 
 - HTML (Hypertext Markup Language): Continua sendo a linguagem de marcação fundamental para estruturar o conteúdo da página web.
 - CSS (Cascading Style Sheets): Mantém seu papel essencial na definição da aparência e estilo da página web.
+- Saas: Contribuiu para uma gestão mais eficiente e modular do código CSS.
 - JavaScript: Ainda é utilizado para adicionar interatividade e funcionalidades dinâmicas à página web.
-- TypeScript: Foi integrado ao projeto para trazer tipagem estática ao JavaScript, o que proporciona um código mais robusto e com menos erros potenciais durante o desenvolvimento.
-- Node.js: Agora faz parte da arquitetura, permitindo a execução de código JavaScript no lado do servidor, proporcionando escalabilidade e eficiência no processamento de requisições.
 
 ## Arquitetura Cloud
 
