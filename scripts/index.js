@@ -39,11 +39,11 @@
 
 (() => {
   const projectsContainer = window.document.querySelector(
-    "div[projects-container]"
+    "div[projects-container]",
   );
   const numberOfProjects = projectsContainer.querySelectorAll("a").length;
   const nextButtons = window.document.querySelectorAll(
-    "button[section-projects__next-button]"
+    "button[section-projects__next-button]",
   );
 
   nextButtons[0].classList.add("--off");
@@ -223,4 +223,22 @@
       behavior: "smooth",
     });
   }
+})();
+
+(() => {
+  const toastTrigger = document.getElementById("liveToastBtn");
+  const toastLiveExample = document.getElementById("liveToast");
+
+  const form = window.document.querySelector("form");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const email = window.document.querySelector("#email").value;
+    const message = window.document.querySelector("#message").value;
+
+    const toastBootstrap =
+      bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+    toastBootstrap.show();
+  });
 })();

@@ -9,6 +9,20 @@
     <title>College Builder</title>
     <link rel="icon" href="/assets/images/brand/icon.png" />
 
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,6 +76,34 @@
     <script defer src="/scripts/index.js" charset="utf-8"></script>
   </head>
   <body>
+    <!---->
+    <!---->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <img
+            src="./assets/images/brand/icon.png"
+            class="rounded me-2"
+            alt="College Builder"
+          />
+          <strong class="me-auto">College Builder</strong>
+          <small>agora</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body">Seu e-mail foi enviado</div>
+      </div>
+    </div>
     <!---->
     <!---->
     <header class="style__header-line">
@@ -347,6 +389,34 @@
           </div>
         </div>
       </div>
+      <!---->
+      <!---->
+      <div id="contato" class="style__section-line">
+        <span class="style__section-line__line"></span>
+        <div class="style__section-padding style__section-container">
+          <h2>CONTATO</h2>
+          <div class="style__section-container__section-content">
+            <form
+              class="style__section-container__section-content__send-mail-form"
+            >
+              <input
+                id="email"
+                name="email"
+                type="text"
+                name="from"
+                placeholder="Digite seu email"
+              />
+              <textarea
+                id="message"
+                name="mensagem"
+                placeholder="Digite uma mensagem"
+              ></textarea>
+              <button id="liveToastBtn" type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!---->
     </main>
     <!---->
     <!---->
